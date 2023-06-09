@@ -1,5 +1,4 @@
 import streamlit as st
-
 if 'proof' not in st.session_state:
 	st.session_state["proof"]=1
 	st.write("st.session_state = ",st.session_state["proof"])

@@ -8,5 +8,6 @@ else:
 	st.write("st.session_state = ",st.session_state["proof"])
 reset_button=st.button("Reset session_state")
 if reset_button:
-	st.session_state.clear()
+	st.session_state={} # Problem
+# 	st.session_state.clear() # Solution
 	st.experimental_rerun()
